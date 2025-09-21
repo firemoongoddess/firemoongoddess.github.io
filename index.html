@@ -2,122 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Firemoongoddess ✨</title>
+  <meta name="description" content="Firemoongoddess • creativity, guidance, and soulful connection." />
   <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: linear-gradient(to bottom right, #0b1020, #1b255a);
-      color: #f5f5ff;
-      line-height: 1.6;
+    :root{
+      --bg:#0b1020; --card:#121937; --ink:#e9ecff; --muted:#aeb5d9; --accent:#9b7cff; --accent2:#45e1ff;
+      --ring: 0 10px 30px rgba(155,124,255,.25);
     }
-    header {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      color: #aeb5d9;
-      font-size: 1.2rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #121937;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-    }
-    nav a {
-      color: #aeb5d9;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      color: #45e1ff;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #1a1f3f;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0,0,0,.3);
-    }
-    h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      color: #9b7cff;
-    }
-    .muted {
-      color: #aeb5d9;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #aeb5d9;
-      font-size: 0.9rem;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      background: linear-gradient(135deg, #9b7cff, #45e1ff);
-      color: #0b1020;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(1200px 600px at 20% -10%, #1c2450 0%, transparent 55%), var(--bg); color:var(--ink); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6}
+    a{color:var(--accent2); text-decoration:none}
+    header{padding:4.5rem 1.25rem 2.25rem; text-align:center}
+    .brand{display:inline-flex; align-items:center; gap:.6rem; letter-spacing:.5px; color:var(--muted); font-weight:600}
+    .logo{width:34px;height:34px;border-radius:50%;background:
+      radial-gradient(12px 12px at 70% 30%, #fff8 0 60%, transparent 61%),
+      conic-gradient(from 180deg at 50% 50%, #9b7cff, #45e1ff 40%, #9b7cff 80%, #45e1ff);
+      box-shadow: var(--ring)}
+    .hero{max-width:1020px;margin:2rem auto 0; display:grid; gap:1.2rem; padding:0 1rem}
+    .hero h1{font-size:clamp(2rem, 4.5vw, 3.25rem); margin:.4rem 0}
+    .sub{color:var(--muted); font-size:clamp(1rem, 2.5vw, 1.2rem)}
+    .cta {display:inline-block; margin-top:1rem; padding:.9rem 1.3rem; border-radius:999px; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#0b1020; font-weight:700}
+    nav{position:sticky; top:0; z-index:10; backdrop-filter:saturate(140%) blur(6px); background:#0b1020cc; border-top:1px solid #ffffff12; border-bottom:1px solid #ffffff12}
+    .navwrap{max-width:1100px; margin:auto; padding:.6rem 1rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap}
+    .navwrap a{padding:.45rem .8rem; border-radius:10px; color:var(--muted)}
+    .navwrap a:hover{background:#ffffff10; color:var(--ink)}
+    main{max-width:1100px; margin:0 auto; padding:2rem 1rem 4rem; display:grid; gap:3rem}
+    section{background:linear-gradient(#ffffff06,#ffffff03); border:1px solid #ffffff14; border-radius:18px; padding:1.5rem 1.25rem; box-shadow: 0 8px 28px #0004}
+    h2{margin:.2rem 0 1rem; font-size:clamp(1.4rem,3.5vw,2rem)}
+    .grid{display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(230px,1fr))}
+    .card{background:var(--card); border-radius:16px; padding:1rem; border:1px solid #ffffff12}
+    .muted{color:var(--muted)}
+    .testi{font-style:italic; background:#0f1533; border:1px solid #ffffff14}
+    .contact a.btn{display:inline-block; margin-top:.6rem; padding:.8rem 1.1rem; border-radius:12px; background:#1b255a; border:1px solid #ffffff1c}
+    footer{color:var(--muted); text-align:center; padding:2rem 1rem}
+    .pill{display:inline-block; padding:.25rem .6rem; border:1px solid #ffffff2a; border-radius:999px; font-size:.8rem; color:var(--muted)}
   </style>
 </head>
 <body>
-
   <header>
-    <h1>🌙 Firemoongoddess</h1>
-    <p>Creativity, guidance, and soulful connection</p>
-    <a class="btn" href="#contact">Work with me</a>
+    <span class="brand"><span class="logo"></span> Firemoongoddess</span>
+    <div class="hero">
+      <h1>Creativity, Guidance & Soulful Connection</h1>
+      <p class="sub">Welcome to my moonlit corner of the internet — readings, rituals, and resources for heart-led living.</p>
+      <div><a class="cta" href="#contact">Book or Say Hello</a></div>
+      <div class="muted"><span class="pill">Tarot</span> <span class="pill">Intuition</span> <span class="pill">Art</span> <span class="pill">Community</span></div>
+    </div>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <div class="navwrap">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Love Notes</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <main>
     <section id="about">
       <h2>About</h2>
-      <p class="muted">Hi, I’m Dasha (aka Firemoongoddess) ✨ I blend tarot, synchronicities, and soulful practices with practical clarity to help others walk their path with courage and heart. This space is my little moonlit corner of the web — welcome.</p>
+      <p class="muted">I’m Dasha (aka <strong>Firemoongoddess</strong>) — creator, intuitive, and night-shift warrior 🐺🌙. I blend practical guidance with soulful tools like tarot, synchronicities, and mindful rituals to help you move with clarity and courage.</p>
     </section>
 
     <section id="services">
       <h2>Services</h2>
-      <ul class="muted">
-        <li>🔮 Personal Tarot Readings (past, present, future)</li>
-        <li>🌌 Energy Check-ins (daily / weekly guidance)</li>
-        <li>🎨 Creative Rituals (prompts, playlists, mindful practices)</li>
-      </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>1:1 Tarot Reading</h3>
+          <p class="muted">Past-present-future, decision clarity, or custom spreads — compassionate, actionable, and grounded.</p>
+        </div>
+        <div class="card">
+          <h3>Energy Check-In</h3>
+          <p class="muted">A quick pulse reading for the day/week + one simple step to anchor your energy.</p>
+        </div>
+        <div class="card">
+          <h3>Creative Rituals</h3>
+          <p class="muted">Playlists, prompts, and tiny practices for busy hearts and night shifts.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
+    <section id="testimonials">
+      <h2>Love Notes</h2>
+      <div class="grid">
+        <blockquote class="card testi">“Spot on and soothing. I left feeling lighter and focused.”</blockquote>
+        <blockquote class="card testi">“Clear, kind, and actionable — not vague woo. Thank you!”</blockquote>
+        <blockquote class="card testi">“The signs she named showed up the same day. Wild.”</blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
       <h2>Contact</h2>
-      <p class="muted">Email me for readings, collaborations, or just to say hi:</p>
-      <a class="btn" href="mailto:you@example.com">📧 Email Me</a>
-      <p class="muted" style="margin-top:1rem">Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+      <p class="muted">Email me for readings, collaborations, or good vibes.</p>
+      <a class="btn" href="mailto:pctmama44@gmail.com?subject=Hello%20from%20your%20website">Email: pctmama44@gmail.com</a>
+      <p class="muted" style="margin-top:.8rem">Instagram: <a href="https://instagram.com/firemoongoddess81" target="_blank">@firemoongoddess81</a></p>
     </section>
   </main>
 
-  <footer>
-    © <span id="year"></span> Firemoongoddess — Made with love 🌙
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer>© <span id="year"></span> Firemoongoddess — Made with 🌙</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 </html>
