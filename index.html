@@ -59,4 +59,65 @@
     }
     footer {
       text-align: center;
-      pa
+      padding: 2rem 1rem;
+      color: #aeb5d9;
+      font-size: 0.9rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #9b7cff, #45e1ff);
+      color: #0b1020;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌙 Firemoongoddess</h1>
+    <p>Creativity, guidance, and soulful connection</p>
+    <a class="btn" href="#contact">Work with me</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p class="muted">Hi, I’m Dasha (aka Firemoongoddess) ✨ I blend tarot, synchronicities, and soulful practices with practical clarity to help others walk their path with courage and heart. This space is my little moonlit corner of the web — welcome.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul class="muted">
+        <li>🔮 Personal Tarot Readings (past, present, future)</li>
+        <li>🌌 Energy Check-ins (daily / weekly guidance)</li>
+        <li>🎨 Creative Rituals (prompts, playlists, mindful practices)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email me for readings, collaborations, or just to say hi:</p>
+      <a class="btn" href="mailto:you@example.com">📧 Email Me</a>
+      <p class="muted" style="margin-top:1rem">Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Firemoongoddess — Made with love 🌙
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
