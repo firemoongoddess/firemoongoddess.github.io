@@ -75,7 +75,20 @@
     section{background:linear-gradient(#ffffff06,#ffffff03); border:1px solid #ffffff14; border-radius:18px; padding:1.5rem 1.25rem; box-shadow: 0 8px 28px #0004}
     h2{margin:.2rem 0 1rem; font-size:clamp(1.4rem,3.5vw,2rem)}
     .grid{display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(230px,1fr))}
-    .card{background:var(--card); border-radius:16px; padding:1rem; border:1px solid #ffffff12}
+    .card {
+  background: rgba(155, 124, 255, 0.15); /* soft transparent purple */
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 12px rgba(155, 124, 255, 0.2);
+}.card:hover {
+  background: rgba(155, 124, 255, 0.25);
+  box-shadow: 0 0 18px rgba(155, 124, 255, 0.4);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+
     .muted{color:var(--muted)}
     .testi{font-style:italic; background:#0f1533; border:1px solid #ffffff14}
     .contact a.btn{display:inline-block; margin-top:.6rem; padding:.8rem 1.1rem; border-radius:12px; background:#1b255a; border:1px solid #ffffff1c}
