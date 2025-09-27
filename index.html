@@ -32,7 +32,33 @@
 
     a{color:var(--accent2); text-decoration:none}
     header{padding:4.5rem 1.25rem 2.25rem; text-align:center}
-    .brand{display:inline-flex; align-items:center; gap:.6rem; letter-spacing:.5px; color:var(--muted); font-weight:600}
+   .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: 3rem; /* Bigger text */
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ff6b00; /* Fiery orange */
+  text-shadow:
+    0 0 10px #ff6b00,
+    0 0 20px #ff4500,
+    0 0 30px #ff0000,
+    0 0 40px #ff4500;
+  animation: flameFlicker 1.5s infinite alternate;
+@keyframes flameFlicker {
+  0% {
+    text-shadow: 0 0 10px #ff6b00, 0 0 20px #ff4500, 0 0 30px #ff0000;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff4500, 0 0 25px #ff0000, 0 0 35px #ff6b00;
+  }
+}
+
+
+ 
+}
+ 
     .logo{width:34px;height:34px;border-radius:50%;background:
       radial-gradient(12px 12px at 70% 30%, #fff8 0 60%, transparent 61%),
       conic-gradient(from 180deg at 50% 50%, #9b7cff, #45e1ff 40%, #9b7cff 80%, #45e1ff);
