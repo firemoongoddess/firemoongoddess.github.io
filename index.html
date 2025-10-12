@@ -105,25 +105,7 @@
   position: relative;
 }
 
-.firemoongoddess-title::after {
-  content: '🌙';
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  animation: pulse 2s infinite;
-}
 
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 0.6; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.6; }
 }
 
 </head>
@@ -131,11 +113,10 @@
   <header>
     <span class="brand"><span class="logo"></span> Firemoongoddess</span>
     <div class="hero">
-      <h1>Creativity, Guidance & Soulful Connection</h1>
-      <p class="sub">Welcome to my moonlit corner of the internet — readings, rituals, and resources for heart-led living.</p>
-      <div><a class="cta" href="#contact">Book or Say Hello</a></div>
-      <div class="muted"><span class="pill">Tarot</span> <span class="pill">Intuition</span> <span class="pill">Art</span> <span class="pill">Community</span></div>
-    </div>
+    <h1 class="firemoongoddess-title">Firemoongoddess</h1>
+  <p class="sub">Welcome to my moonlit corner of the internet — readings, rituals, and resources for heart-led living.</p>
+</div>
+
   </header>
 
   <nav>
