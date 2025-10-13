@@ -58,8 +58,8 @@ body {
       box-shadow: var(--ring)}
     .hero<div class="hero">
   <h1 class="firemoongoddess-title">Firemoongoddess</h1>
-  <p class="sub">Welcome to my moonlit corner of the internet — readings, rituals, and resources for heart-led living.</p>
-  ...
+ <p class="welcome-flame"><p class="welcome-flame">Welcome to my moonlit corner...</p>
+
 </div>
 
     .sub{color:var(--muted); font-size:clamp(1rem, 2.5vw, 1.2rem)}
@@ -117,7 +117,35 @@ body {
 
 
 
-</head>
+</head>.welcome-flame {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #ffddc1;
+  text-shadow:
+    0 0 5px #ffae42,
+    0 0 10px #ff7300,
+    0 0 20px #ff4500,
+    0 0 30px #ff0000;
+  animation: flameGlow 2s infinite alternate;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@keyframes flameGlow {
+  0% {
+    text-shadow:
+      0 0 5px #ffae42,
+      0 0 10px #ff7300,
+      0 0 20px #ff4500;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #ff7300,
+      0 0 20px #ff4500,
+      0 0 30px #ff0000;
+  }
+}
+
 <body>
   <header>
     <span class="brand"><span class="logo"></span> Firemoongoddess</span>
