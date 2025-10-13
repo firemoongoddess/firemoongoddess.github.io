@@ -4,6 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
  <style>
+  .welcome-flame {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #ffddc1;
+  text-shadow:
+    0 0 5px #ffae42,
+    0 0 10px #ff7300,
+    0 0 20px #ff4500,
+    0 0 30px #ff0000;
+  animation: flameGlow 2s infinite alternate;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@keyframes flameGlow {
+  0% {
+    text-shadow:
+      0 0 5px #ffae42,
+      0 0 10px #ff7300,
+      0 0 20px #ff4500;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #ff7300,
+      0 0 20px #ff4500,
+      0 0 30px #ff0000;
+  }
+}
+ 
 body {
   margin: 0;
   background: 
